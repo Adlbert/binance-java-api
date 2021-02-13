@@ -1,5 +1,6 @@
 package com.binance.api.examples;
 
+import com.binance.api.Credentials;
 import com.binance.api.client.BinanceApiClientFactory;
 import com.binance.api.client.BinanceApiRestClient;
 import com.binance.api.client.BinanceApiWebSocketClient;
@@ -76,6 +77,6 @@ public class AccountBalanceCacheExample {
   }
 
   public static void main(String[] args) {
-    new AccountBalanceCacheExample("YOUR_API_KEY", "YOUR_SECRET");
+    new AccountBalanceCacheExample(Credentials.API_KEY, Credentials.API_SECRET);
   }
 }
